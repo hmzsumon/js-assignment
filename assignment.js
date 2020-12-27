@@ -1,5 +1,4 @@
 // function FeetTomile
-
 function feetTomile(feet) {
 	// 1 mile = 5280 feet
 	let mile = feet / 5280;
@@ -23,4 +22,23 @@ function woodCalculator(a, b, c) {
 		`${a} chair, ${b} table and ${c} bed To make need = ${total} cubic feet wood`
 	);
 }
-woodCalculator(12, 2, 3);
+woodCalculator(12, 4, 2);
+
+// brickCalculator
+
+function brickCalculator(a) {
+	let bricks = 1000;
+	let totalBricks = 0;
+	if (a <= 10 && a < 20) {
+		totalBricks = a * 15 * bricks;
+	} else if (a > 10 && a <= 20) {
+		totalBricks = a * 12 * bricks;
+	} else if (a > 20) {
+		totalBricks = a * 10 * bricks;
+	}
+
+	console.log(
+		`${a}-floor height building  to make need ${totalBricks} pieces of bricks`
+	);
+}
+brickCalculator(3);
