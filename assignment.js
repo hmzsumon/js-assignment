@@ -25,7 +25,6 @@ function woodCalculator(a, b, c) {
 woodCalculator(12, 4, 2);
 
 // brickCalculator
-
 function brickCalculator(a) {
 	let bricks = 1000;
 	let totalBricks = 0;
@@ -42,3 +41,15 @@ function brickCalculator(a) {
 	);
 }
 brickCalculator(3);
+
+// tinyFriend
+function tinyFriend() {
+	let shortName = arguments[0];
+	for (let i = 0; i < arguments.length; i++) {
+		if (arguments[i].length < shortName.length) {
+			shortName = arguments[i];
+		}
+	}
+	console.log(shortName);
+}
+tinyFriend('sum', 'amin', 'karim');
